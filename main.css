@@ -1,0 +1,513 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
+/* Стили окна входа */
+
+.messages-box {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.show-message {
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: 0.5vw auto auto auto;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: rgb(227, 226, 226);
+}
+
+.show-message__title {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.show-message__preview {
+  box-sizing: border-box;
+}
+
+.show-message__But-ok {
+  border-radius: 15px;
+}
+
+/* Окно пользователей */
+
+.users-block {
+  border: 1px solid black;
+  border-radius: 15px 0 0 15px;
+}
+
+.users-block__user {
+  display: flex;
+  align-items: center;
+}
+
+.users-block__user__logo {
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+/* Чат */
+
+body {
+  display: flex;
+  align-items: flex-start;
+}
+
+.chat {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.chat__messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chat__tools {
+  display: flex;
+}
+
+.chat__tools__input {
+  resize: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.chat__tools__but {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/* Блоки с сообщениями */
+
+.chat__messages__message-block {
+  width: 100%;
+  margin: 2% 0;
+}
+
+.chat__messages__message-block__body{
+  width: 70%;
+}
+
+.my-message {
+  text-align: right;
+}
+.my-message > .chat__messages__message-block__head {
+  color: red;
+}
+.my-message > .chat__messages__message-block__body {
+  margin-left: 30%;
+  text-align: left;
+}
+/* Стили окна входа */
+
+.show-message {
+    width: 100vw;
+    height: 80vw;
+    margin-top: 5vw;
+}
+
+.show-message__title {
+    margin-top: 4vw;
+    font-size: 6vw;
+    margin-bottom: 2vw;
+}
+
+
+.show-message__preview {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    padding: 2vw;
+    margin-bottom: 4vw;
+    font-size: 6vw;
+}
+
+.show-message__But-ok {
+    width: 50vw;
+    height: 10vw;
+    font-size: 6vw;
+    margin-left: calc(50% - 25vw);
+}
+
+/* Окно пользователей */
+
+.users-block {
+    width: 80vw;
+    min-height: 40vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    padding: 3vw 3vw;
+}
+  
+.users-block__user {
+    margin-top: 2vw;
+    font-size: 6vw;
+}
+  
+.users-block__user__logo {
+    display: none;
+}
+
+/* Чат */
+
+.chat {
+    margin-top: 1vw;
+    height: 80vh;
+    width: 80vw;
+    padding: 1%; 
+}
+
+.chat__messages {
+    margin-bottom: 1%;
+    width: 98%;
+    height: 73%;
+}
+
+.chat__tools {
+    width: 100%;
+    height: 20%;
+}
+
+.chat__tools__input {
+    width: 99%;
+    height: 99%;
+    padding: 2%;
+}
+.chat__tools__but {
+    width: 99%;
+    height: 30%;
+}
+
+/* Блоки с сообщениями */
+
+.chat__messages__message-block {
+    margin: 5% 2.5%;
+}
+
+.chat__messages__message-block__head{
+    font-size: 4vw;
+    flood-color: gray;
+    margin-bottom: 2%;
+    margin-right: 2.5%;
+}
+
+.chat__messages__message-block__body{
+    font-size: 4.5vw;
+}
+@media (min-width: 768px) {
+    /* Стили окна входа */
+
+    .show-message {
+        width: 80vw;
+        height: 20vw;
+        margin-top: 5vw;
+    }
+
+    .show-message__title {
+        margin-top: 2vw;
+        font-size: 2vw;
+        margin-bottom: 1vw;
+    }
+
+
+    .show-message__preview {
+        margin-left: 4%;
+        margin-right: 4%;
+        width: 92%;
+        padding: 0.5vw;
+        margin-bottom: 1vw;
+        font-size: 2vw;
+    }
+
+    .show-message__But-ok {
+        width: 15vw;
+        height: 4vw;
+        font-size: 1.5vw;
+        margin-left: calc(50% - 7.5vw);
+    }
+
+    /* Окно пользователей */
+
+    .users-block {
+      width: 20vw;
+      min-height: 20vw;
+      margin-left: 2vw;
+      margin-top: 2vw;
+      padding: 1vw 1vw;
+    }
+
+    .users-block__user {
+      margin-top: 1vw;
+      font-size: 2vw;
+    }
+
+    .users-block__user__logo {
+      display: inline;
+      width: 2vw;
+      height: 2vw;
+      margin-right: 0.5vw;
+    }
+
+       /* Чат */
+
+       .chat {
+        margin-top: 1vw;
+        height: 80vh;
+        width: 80vw;
+        padding: 1%; 
+      }
+  
+      .chat__messages {
+        margin-bottom: 1%;
+        width: 98%;
+        height: 79%;
+      }
+  
+      .chat__tools {
+        width: 100%;
+        height: 20%;
+      }
+  
+      .chat__tools__input {
+        width: 90%;
+        height: 99%;
+        padding: 1%;
+      }
+      .chat__tools__but {
+        width: 10%;
+        height: 99%;
+      }
+       
+    /* Блоки с сообщениями */
+
+    .chat__messages__message-block {
+      margin: 3% 0;
+    }
+
+    .chat__messages__message-block__head{
+      font-size: 1.5vw;
+      flood-color: gray;
+    }
+
+    .chat__messages__message-block__body{
+      font-size: 2vw;
+    }
+
+}
+@media (min-width: 1024px) {
+  /* Стили окна входа */
+
+    .show-message {
+      width: 50vw;
+      height: 10vw;
+    }
+
+    .show-message__title {
+      margin-top: 1vw;
+      font-size: 1.5vw;
+      margin-bottom: 0.5vw;
+    }
+
+
+    .show-message__preview {
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      min-width: 95%;
+      max-width: 95%;
+      padding: 0.5vw;
+      margin-bottom: 1vw;
+      font-size: 1.15vw;
+    }
+
+    .show-message__But-ok {
+      width: 15vw;
+      height: 2.1vw;
+      font-size: 1.15vw;
+      margin-left: calc(98% - 31vw);
+    }
+
+    /* Окно пользователей */
+
+    .users-block {
+      width: 20vw;
+      min-height: 30vw;
+      margin-left: 4vw;
+      margin-top: 2vw;
+      padding: 2vw 4vw;
+    }
+
+    .users-block__user {
+      margin-top: 0.5vw;
+      font-size: 1.5vw;
+    }
+
+    .users-block__user__logo {
+      display: inline;
+      width: 3vw;
+      height: 3vw;
+      margin-right: 0.5vw;
+    }
+
+    /* Чат */
+
+    .chat {
+      margin-top: 1vw;
+      height: 80vh;
+      width: 80vw;
+      padding: 1%; 
+    }
+
+    .chat__messages {
+      margin-bottom: 1%;
+      width: 98%;
+      height: 79%;
+    }
+
+    .chat__tools {
+      width: 100%;
+      height: 20%;
+    }
+
+    .chat__tools__input {
+      width: 90%;
+      height: 100%;
+    }
+    .chat__tools__but {
+      width: 10%;
+      height: 99%;
+    }
+
+    /* Блоки с сообщениями */
+
+    .chat__messages__message-block {
+      margin: 2% 0;
+    }
+
+    .chat__messages__message-block__head{
+      font-size: 1.25vw;
+      flood-color: gray;
+    }
+
+    .chat__messages__message-block__body{
+      font-size: 1.5vw;
+    }
+    
+  }
+.users-close {
+    width: 10vw;
+    padding: 0;
+  }
+  
+  .users-close > .users-block__user {
+    display: none;
+  }
+
+  .users-close::before {
+    content: url(abd27a8a5c13e90513bc.svg);
+    width: 3vw;
+  }
+
+
+  @media (min-width: 768px) {
+    .users-close {
+        width: 4vw;
+      }
+  }
+
+  @media (max-width: 768px) {
+      /* Чат */
+  
+    .chat {
+      min-width: 80vw;
+    }
+
+    .chat__tools {
+      display: block;
+    }
+
+    .chat__tools__but__img {
+      display: none;
+    }
+
+    .chat__tools__but {
+      background-image: url(51c1048323a3c2592f62.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .user-show-mobile-b {
+    z-index: 0;
+    margin-left: -74%;
+  }
+
+  .user-show-mobile {
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);;
+  }
+  }
+
