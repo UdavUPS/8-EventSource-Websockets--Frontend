@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="users-block users-close">
+
+
+        <div class="users-block__user">
+            <div class="users-block__user__logo"></div>
+            <div class="users-block__user__name">Пользователь</div>
+        </div>
+
+        <div class="users-block__user">
+            <div class="users-block__user__logo"></div>
+            <div class="users-block__user__name">Пользователь2</div>
+        </div>
+
+    </div>
+
+
+
+    <div class="chat">
+        <div class="chat__messages">
+
+            <!-- Образец блока сообщения -->
+             <div class="chat__messages__message-block">
+                <div class="chat__messages__message-block__head">Name, 29.10.24 20:00</div>
+                <div class="chat__messages__message-block__body">Отец мой Андрей Петрович Гринев в молодости своей служил при графе Минихе и вышел в отставку премьер-майором в 17.. году. С тех пор жил он в своей Симбирской деревне, где и женился на девице Авдотье Васильевне Ю</div>
+             </div>
+             <div class="chat__messages__message-block my-message">
+                <div class="chat__messages__message-block__head">Name, 29.10.24 20:00</div>
+                <div class="chat__messages__message-block__body">Отец мой Андрей Петрович Гринев в молодости своей служил при графе Минихе и вышел в отставку премьер-майором в 17.. году. С тех пор жил он в своей Симбирской деревне, где и женился на девице Авдотье Васильевне Ю</div>
+             </div>
+
+
+        </div>
+        <div class="chat__tools">
+            <textarea class="chat__tools__input"></textarea>
+            <button class="chat__tools__but"><img class="chat__tools__but__img" src="./img/send.svg" alt="Отправить сообщение"></button>
+        </div>
+    </div>
+
+
+
+    <div class="messages-box visually-hidden">
+        <!-- Образец входного окна -->
+        <div class="show-message visually-hidden">
+            <div class="show-message__title">Выберите псевдоним</div>
+            <input type="text" class="show-message__preview">
+            <button class="show-message__But-ok">Продолжить</button>
+        </div>
+
+
+    </div>
+</body>
+</html>

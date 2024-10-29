@@ -1,0 +1,116 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
+/* Стили окна входа */
+
+.messages-box {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.show-message {
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: 0.5vw auto auto auto;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: rgb(227, 226, 226);
+}
+
+.show-message__title {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.show-message__preview {
+  box-sizing: border-box;
+}
+
+.show-message__But-ok {
+  border-radius: 15px;
+}
+
+/* Окно пользователей */
+
+.users-block {
+  border: 1px solid black;
+  border-radius: 15px 0 0 15px;
+}
+
+.users-block__user {
+  display: flex;
+  align-items: center;
+}
+
+.users-block__user__logo {
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+/* Чат */
+
+body {
+  display: flex;
+  align-items: flex-start;
+}
+
+.chat {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.chat__messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chat__tools {
+  display: flex;
+}
+
+.chat__tools__input {
+  resize: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.chat__tools__but {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/* Блоки с сообщениями */
+
+.chat__messages__message-block {
+  width: 100%;
+  margin: 2% 0;
+}
+
+.chat__messages__message-block__body{
+  width: 70%;
+}
+
+.my-message {
+  text-align: right;
+}
+.my-message > .chat__messages__message-block__head {
+  color: red;
+}
+.my-message > .chat__messages__message-block__body {
+  margin-left: 30%;
+  text-align: left;
+}

@@ -1,0 +1,53 @@
+.users-close {
+    width: 10vw;
+    padding: 0;
+  }
+  
+  .users-close > .users-block__user {
+    display: none;
+  }
+
+  .users-close::before {
+    content: url(../img/burger.svg);
+    width: 3vw;
+  }
+
+
+  @media (min-width: 768px) {
+    .users-close {
+        width: 4vw;
+      }
+  }
+
+  @media (max-width: 768px) {
+      /* Чат */
+  
+    .chat {
+      min-width: 80vw;
+    }
+
+    .chat__tools {
+      display: block;
+    }
+
+    .chat__tools__but__img {
+      display: none;
+    }
+
+    .chat__tools__but {
+      background-image: url(../img/send.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .user-show-mobile-b {
+    z-index: 0;
+    margin-left: -74%;
+  }
+
+  .user-show-mobile {
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);;
+  }
+  }

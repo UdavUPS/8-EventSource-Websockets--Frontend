@@ -1,0 +1,99 @@
+@media (min-width: 1024px) {
+  /* Стили окна входа */
+
+    .show-message {
+      width: 50vw;
+      height: 10vw;
+    }
+
+    .show-message__title {
+      margin-top: 1vw;
+      font-size: 1.5vw;
+      margin-bottom: 0.5vw;
+    }
+
+
+    .show-message__preview {
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      min-width: 95%;
+      max-width: 95%;
+      padding: 0.5vw;
+      margin-bottom: 1vw;
+      font-size: 1.15vw;
+    }
+
+    .show-message__But-ok {
+      width: 15vw;
+      height: 2.1vw;
+      font-size: 1.15vw;
+      margin-left: calc(98% - 31vw);
+    }
+
+    /* Окно пользователей */
+
+    .users-block {
+      width: 20vw;
+      min-height: 30vw;
+      margin-left: 4vw;
+      margin-top: 2vw;
+      padding: 2vw 4vw;
+    }
+
+    .users-block__user {
+      margin-top: 0.5vw;
+      font-size: 1.5vw;
+    }
+
+    .users-block__user__logo {
+      display: inline;
+      width: 3vw;
+      height: 3vw;
+      margin-right: 0.5vw;
+    }
+
+    /* Чат */
+
+    .chat {
+      margin-top: 1vw;
+      height: 80vh;
+      width: 80vw;
+      padding: 1%; 
+    }
+
+    .chat__messages {
+      margin-bottom: 1%;
+      width: 98%;
+      height: 79%;
+    }
+
+    .chat__tools {
+      width: 100%;
+      height: 20%;
+    }
+
+    .chat__tools__input {
+      width: 90%;
+      height: 100%;
+    }
+    .chat__tools__but {
+      width: 10%;
+      height: 99%;
+    }
+
+    /* Блоки с сообщениями */
+
+    .chat__messages__message-block {
+      margin: 2% 0;
+    }
+
+    .chat__messages__message-block__head{
+      font-size: 1.25vw;
+      flood-color: gray;
+    }
+
+    .chat__messages__message-block__body{
+      font-size: 1.5vw;
+    }
+    
+  }
